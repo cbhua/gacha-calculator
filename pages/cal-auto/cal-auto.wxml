@@ -1,0 +1,40 @@
+<!--index.wxml-->
+<view class="container">
+
+  <view>
+    <button bindtap="back">返回</button>
+  </view>
+
+  <view class="title">
+    <text class="title-text">Am I Lucky?</text>
+    <text class="title-text-bi">我今天是欧皇吗？</text>
+  </view>
+
+  <view class="selection">
+    <view class="selection-title">选择在玩的游戏</view>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker">
+        {{array[index]}}
+      </view>
+    </picker>
+    <view class="selection-describe">{{describe[index]}}</view>
+  </view>
+
+  <view class="input">
+    <view class="input-title">抽了几次？</view>
+    <view class="input-table">
+      <input class="input-table-bi" type="number" bindinput="gachaTimesInput"/>
+    </view>
+  </view>
+
+  <view class="input">
+    <view class="input-title">中了几次？</view>
+    <view class="input-table">
+      <input class="input-table-bi" type="number" bindinput="winTimesInput"/>
+    </view>
+  </view>
+
+  <view class="calculate">
+    <button class="calculate-buttom" size="default" bindtap="submit" form-type="submit">算！</button>
+  </view>
+</view>

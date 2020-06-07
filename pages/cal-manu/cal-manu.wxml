@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="container">
+  <view>
+    <button bindtap="back">返回</button>
+  </view>
+  <view class="title">
+    <text class="title-text">Am I Lucky?</text>
+    <text class="title-text-bi">我今天是欧皇吗？</text>
+  </view>
+  <view class="operation">
+    <text>Hi, 这里是手动计算</text>
+  </view>
+</view>

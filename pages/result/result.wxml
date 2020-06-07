@@ -1,0 +1,11 @@
+<view class="container">
+  <view class="return">
+    <button bindtap="return">返回</button>
+  </view>
+
+  <view class="result">
+    <text class="result-describe">抽卡次数：{{gachaTimes}}, 抽中次数：{{winTimes}}\n</text>
+    <text class="result-title">这种情况下的的概率为：\n</text>
+    <text class="result-number">{{result}}</text>
+  </view>
+</view>
