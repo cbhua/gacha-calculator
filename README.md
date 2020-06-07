@@ -1,14 +1,7 @@
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-      processEscapes: true
-    }
-  });
-</script>
 
-# 我是欧皇吗？
+
+
+# 我今天欧了吗？
 这是一个关于抽卡概率计算的微信小程序。
 
 ## 背景
@@ -17,7 +10,7 @@
 
 > “UR(Ultra Rare) 的概率是 1%，我抽了 100 连也没有耶，这游戏概率是不是有坑。”
 
-简单地计算 $0.99 ^ 100 \approx 0.366$ 就知道 100 连翻车的概率高达 36% 左右~~（高达？哪里有高达？）~~。
+简单地计算 $$0.99 ^ 100 \approx 0.366$$ 就知道 100 连翻车的概率高达 36% 左右~~（高达？哪里有高达？）~~。
 
 这个工具也可以帮助欧洲的朋友们计算自己到底是怎么样的天选之人，比如：
 
@@ -25,9 +18,32 @@
 >
 > “哇那你是真的 GOU！”
 
-那么让我们来算算 $C^{10}_{5} \times 0.99^5 \times 0.01^5 \approx 0.0000000239$，这个概率比日本麻将纯正九宝莲灯概率还要低得多，如果真抽中了就赶紧祛厄一下吧。
+那么让我们来算算 $$C^{10}_{5} \times 0.99^5 \times 0.01^5 \approx 0.0000000239$$，这个概率比日本麻将纯正九宝莲灯概率还要低得多，如果真抽中了就赶紧祛厄一下吧。
 
 因此，这个工具不仅可以给翻车的朋友们带来安慰，也可以给出货的朋友带来满足感，从而提升整体人类的幸福感，是利国利民的好事。
+
+## 开发状态
+
+- [ ] 构建 Pages 基本元素块框架；
+  - [x] index - 首页；
+  - [x] cal-auto - 预设计算页面；
+  - [ ] cal-manu - 手动计算页面；
+  - [x] result - 结果输出界面；
+- [ ] 页面间数据传递；
+  - [x] cal-auto to result;
+  - [ ] cal-manu to result;
+- [x] Result 页面数据计算与输出；
+- [ ] Result 页面文字输出；
+- [ ] cal-auto & cal-manu 输入鲁棒性检查；
+- [ ] 调整各页面 CSS；
+  - [ ] index;
+  - [ ] cal-auto;
+  - [ ] cal-manu;
+  - [ ] result;
+
+其他特性的实现：
+
+- [ ] Result 页面添加分享；
 
 ## 特性
 
@@ -59,7 +75,7 @@
 
 ## 使用
 
-
+**Todo**
 
 # 备注
 
