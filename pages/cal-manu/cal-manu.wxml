@@ -1,13 +1,21 @@
-<!--index.wxml-->
 <view class="container">
-  <view>
-    <button bindtap="back">返回</button>
+  <view class="input">
+    <text class="input-title">概率：</text>
+    <input class="input-table-bi" type="number" bindinput="gachaProbInput" maxlength="2"/>
+    <text class="input-title" decode="true">&nbsp;%</text>
   </view>
-  <view class="title">
-    <text class="title-text">Am I Lucky?</text>
-    <text class="title-text-bi">我今天是欧皇吗？</text>
+
+  <view class="input">
+    <text class="input-title">抽了几次：</text>
+    <input class="input-table-bi" type="number" bindinput="gachaTimesInput" maxlength="3"/>
   </view>
-  <view class="operation">
-    <text>Hi, 这里是手动计算</text>
+
+  <view class="input">
+    <text class="input-title">中了几次：</text>
+    <input class="input-table-bi" type="number" bindinput="winTimesInput" maxlength="3"/>
+  </view>
+
+  <view class="calculate">
+    <button class="calculate-buttom" size="default" bindtap="submit" form-type="submit">给我算</button>
   </view>
 </view>

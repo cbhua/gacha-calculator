@@ -1,0 +1,61 @@
+page {
+  background-image: url("https://i.loli.net/2020/06/07/WlbiE76xnGMmZtj.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: 50%;
+  width: 100%;
+}
+.container {
+  position: absolute;
+  width: 100%;
+  padding-top: 45vh;
+}
+.input {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 20px;
+}
+.input-title {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.input-table-bi {
+  color: #f07810;
+  font-weight: bold;
+  width: 50px;
+  height: 25px;
+  border: 2px solid #ccc;
+  background: #F4F4F7;
+  border-radius: 10px;
+  text-align:center;
+}
+.calculate-buttom {
+	color:#FFF;
+	display:block;
+	text-decoration:none;
+	border-radius:15px;
+	border:solid 1px #D94E3B;
+	background:#f07810;
+  text-align:center;
+  margin-top: 20px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  letter-spacing: 2px;
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	transition: all 0.1s;
+	-webkit-box-shadow: 0px 9px 0px #D65F00;
+  -moz-box-shadow: 0px 9px 0px #D65F00;
+  box-shadow: 0px 9px 0px #D65F00;
+}
+.calculate-buttom:active{
+  -webkit-box-shadow: 0px 2px 0px #D65F00;
+  -moz-box-shadow: 0px 2px 0px #D65F00;
+  box-shadow: 0px 2px 0px #D65F00;
+  position:relative;
+  top:7px;
+}
