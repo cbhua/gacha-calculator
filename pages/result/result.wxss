@@ -1,0 +1,79 @@
+page {
+  background-image: url("https://i.loli.net/2020/06/07/xJ45qGXa2Y8jRS3.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: 30%;
+  width: 100%;
+}
+.container {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  margin: 0 auto;
+}
+.result-number {
+  word-break: break-all;
+  font-size: 45px;
+  font-weight: bolder;
+  text-align: center;
+  color:#fefefe;
+  text-shadow:
+  0px 1px 0px #c0c0c0,
+  0px 2px 0px #b0b0b0,
+  0px 3px 0px #a0a0a0,
+  0px 4px 0px #909090,
+  0px 5px 10px rgba(0, 0, 0, 0.6);
+}
+.result-info {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.result-describe {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+.result-describe-text {
+  font-size: 45px;
+  font-weight: bolder;
+  text-align: center;
+  color:#f07810;
+  text-shadow:
+  0px 1px 0px #D65F00,
+  0px 2px 0px rgb(198, 90, 2),
+  0px 3px 0px rgb(176, 79, 0),
+  0px 4px 0px rgb(166, 75, 0);
+}
+.back {
+	color:#FFF;
+	display:block;
+	text-decoration:none;
+	border-radius:15px;
+	border:solid 1px #D94E3B;
+	background:#f07810;
+  text-align:center;
+  margin-top: 40px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  letter-spacing: 2px;
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	transition: all 0.1s;
+	-webkit-box-shadow: 0px 9px 0px #D65F00;
+        -moz-box-shadow: 0px 9px 0px #D65F00;
+        box-shadow: 0px 9px 0px #D65F00;
+}
+.back:active{
+  -webkit-box-shadow: 0px 2px 0px #D65F00;
+  -moz-box-shadow: 0px 2px 0px #D65F00;
+  box-shadow: 0px 2px 0px #D65F00;
+  position:relative;
+  top:7px;
+}

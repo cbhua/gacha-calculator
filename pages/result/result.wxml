@@ -1,11 +1,24 @@
 <view class="container">
-  <view class="return">
-    <button bindtap="return">返回</button>
+  <view class="result" wx:if="{{correct && nan}}">
+    <view class="result-number" wx:if="{{result >= 0.00000000001}}">{{result * 100}}%</view>
+    <view class="result-info"><text>出货概率{{probability * 100}}%\n抽卡{{gachaTimes}}次, 出货{{winTimes}}次</text></view>
+    <view class="result-describe" wx:if="{{result >= 0.5}}">朋友，这个已经超过丢一个硬币猜中正反的概率了。</view>
+    <view class="result-describe" wx:if="{{result < 0.5 && result > 0.000001}}">概率和日本麻将中和一次</view>
+    <view class="result-describe-text"  wx:if="{{result < 0.5 && result > 0.000001}}">{{describe}}</view>
+    <view class="result-describe" wx:if="{{result < 0.5 && result > 0.000001}}">差不多</view>
   </view>
 
-  <view class="result">
-    <text class="result-describe">抽卡次数：{{gachaTimes}}, 抽中次数：{{winTimes}}\n</text>
-    <text class="result-title">这种情况下的的概率为：\n</text>
-    <text class="result-number">{{result}}</text>
+  <view class="result" wx:if="{{correct && !nan}}">
+    <view class="result-number">???</view>
+    <view class="result-info">出货概率是{{probability * 100}}%，抽卡{{gachaTimes}}次, 出货{{winTimes}}次</view>
+    <view class="result-describe">兄弟，这个数你是认真的？</view>
   </view>
+
+  <view class="result" wx:if="{{!correct}}">
+    <view class="result-number">???</view>
+    <view class="result-info">你咋出货比抽的次数还多？\n号给我康康？</view>
+  </view>
+
+  <button class="back" size="default" bindtap="back">再来一次</button>
+
 </view>
