@@ -1,18 +1,4 @@
-<!--index.wxml-->
-<view class="container">
-  <!-- <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view> -->
-  <view class="title">
-    <text class="title-text">Am I Lucky?\n</text>
-    <text class="title-text-bi">我今天是欧皇吗？</text>
-  </view>
-  <view class="operation">
-    <button bindtap="gotoCalAutoPage">选择游戏</button>
-    <button bindtap="gotoCalManuPage">手动计算</button>
-  </view>
+<view class="operation">
+  <button class="select" bindtap="gotoCalAutoPage">选择游戏</button>
+  <button class="select" bindtap="gotoCalManuPage">手动计算</button>
 </view>

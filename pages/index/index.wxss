@@ -1,25 +1,39 @@
-/**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+page {
+  background-image: url("https://i.loli.net/2020/06/07/brc4pMVT9POX8zA.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: 30%;
+  width: 100%;
 }
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.operation {
+  position: absolute;
+  top: 60%;
+  width: 100%;
 }
-
-.userinfo-nickname {
-  color: #aaa;
+.select {
+  width: 45%;
+  height: 50px;
+  margin-top: 25px;
+  letter-spacing:3px;
+  font-weight: bold;
+  color:#FFF;
+	display:block;
+	text-decoration:none;
+	border-radius:15px;
+	border:solid 1px #D94E3B;
+	background:#f07810;
+	text-align:center;
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	transition: all 0.1s;
+	-webkit-box-shadow: 0px 9px 0px #D65F00;
+  -moz-box-shadow: 0px 9px 0px #D65F00;
+  box-shadow: 0px 9px 0px #D65F00;
 }
-
-.usermotto {
-  margin-top: 200px;
-}
-
-.title {
-  margin-top: 5%;
+.select:active{
+  -webkit-box-shadow: 0px 2px 0px #D65F00;
+  -moz-box-shadow: 0px 2px 0px #D65F00;
+  box-shadow: 0px 2px 0px #D65F00;
+  position:relative;
+  top:7px;
 }
