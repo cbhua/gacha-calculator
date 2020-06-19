@@ -4,6 +4,10 @@
 # 今天我是欧皇吗？
 这是一个关于抽卡概率计算的微信小程序。
 
+你可以通过扫描下面的二维码，或者在微信小程序搜索“我是欧皇吗”找到它
+
+![qr-code.png](https://github.com/chuanbohua/wxapp-am-i-lucky/blob/master/imgs/qr-code.png?raw=true)
+
 ## 背景
 
 对于抽卡概率的误解到处都是，其中比较有名的例子：
